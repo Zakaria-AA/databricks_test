@@ -21,7 +21,7 @@ if a == "7":
   data = api_response.text
   parse_json = json.loads(data)
 
-  pd.DataFrame(parse_json)
+  display(pd.DataFrame(parse_json))
 else:
   print("Not a Seven, skipping run ...")
 
